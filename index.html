@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheets here -->
+    <link rel="stylesheet" href="/assets/style/index.css">
+    <title>Ninja Studio</title>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar__left">
+        <div class="navbar__left--logo">
+            <img src="/assets/image/music-player-logo.png" alt="" class="logo">
+            <div class="navbar__left--text">
+                <div class="logo--text-1">Ninja</div>
+                <div class="logo--text-2">Studio</div>
+            </div>
+        </div>
+        <div class="navbar__left--favorites"> Favorites</div>
+    </div>
+
+    <div class="navbar__right">
+        <div class="navbar__right--search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="search..">
+            <i class="bi bi-mic-fill"></i>
+        </div>  
+        <div class="navbar__right--bell">
+            <i class="bi bi-bell-fill"></i>
+        </div> 
+        <div class="navbar__right--profile">
+            <i class="bi bi-person-circle"></i>
+        </div> 
+    </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <!-- !! Left section of ui start from here -->
+      <div class="section__left">
+
+        <!-- poster part of left section -->
+        <div class="section__left--poster">
+          <img src="assets/image/music-poster/poster-1.jpg" alt="">
+          <img src="assets/image/music-poster/poster-4.jpg" alt="">
+          <img src="assets/image/music-poster/poster-6.jpg" alt="">
+          <img src="assets/image/music-poster/poster-10.jpg" alt="">
+        </div>
+
+        <!--  Latest Release part of ui  -->
+        <div class="section__left--release">
+          <div class="title">Latest Release</div>
+          <div class="latest--release">
+            <!-- release card-1 -->
+            <div class="card">
+              <!-- left part -->
+              <div class="card__left">
+                <div class="card__image">
+                  <img src="/assets/image/latest-release/latest-release-1.jpg" alt="">
+                  <a href="#control__panel" >
+                    <i class="bi bi-play-fill"></i>
+                     
+                  </a>
+                </div>
+                <div class="card__name">
+                  <div class="card__name--title">onism</div>
+                  <div class="card__name--date">July 2022</div>
+                </div>
+              </div>
+              <!-- right part -->
+              <div class="card__right">
+                <!-- hover dropdown effect -->
+                <div id="dropdown">
+                  <i class="bi bi-three-dots dot__btn">
+                    <!-- dropdwon menu shows -->
+                    <div class="dropdown__menu">
+                      <div class="drop__item">
+                        <i class="bi bi-play-fill"></i>
+                        <a href="#music-bar">Play Now</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus-lg"></i>
+                        <a href="#latest-release">Add to Queue</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus"></i>
+                        <a href="#latest-release">Add to Favourites</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <a href="#latest-release">Get Info</a>
+                      </div> 
+                    </div>
+                  </i>
+                </div>
+
+                <!-- time duration -->
+                <div class="time">4:45</div>
+              </div>
+            </div>
+           
+            <!-- release card-2 -->
+            <div class="card">
+              <div class="card__left">
+                <div class="card__image">
+                  <img src="/assets/image/latest-release/latest-release-1.jpg" alt="">
+                  <a href="#control__panel" >
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+                <div class="card__name">
+                  <div class="card__name--title">onism</div>
+                  <div class="card__name--date">July 2022</div>
+                </div>
+              </div>
+              <div class="card__right">
+                 <!-- hover dropdown effect -->
+                 <div id="dropdown">
+                  <i class="bi bi-three-dots dot__btn">
+                    <!-- dropdwon menu shows -->
+                    <div class="dropdown__menu">
+                      <div class="drop__item">
+                        <i class="bi bi-play-fill"></i>
+                        <a href="#music-bar">Play Now</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus-lg"></i>
+                        <a href="#latest-release">Add to Queue</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus"></i>
+                        <a href="#latest-release">Add to Favourites</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <a href="#latest-release">Get Info</a>
+                      </div> 
+                    </div>
+                  </i>
+                </div>
+                <div class="time">4:45</div>
+              </div>
+            </div>
+            <!-- release card-3 -->
+            <div class="card">
+              <div class="card__left">
+                <div class="card__image">
+                  <img src="/assets/image/latest-release/latest-release-1.jpg" alt="">
+                  <a href="#control__panel" >
+                    <i class="bi bi-play-fill"></i>
+
+                  </a>
+                </div>
+                <div class="card__name">
+                  <div class="card__name--title">onism</div>
+                  <div class="card__name--date">July 2022</div>
+                </div>
+              </div>
+              <div class="card__right">
+                 <!-- hover dropdown effect -->
+                 <div id="dropdown">
+                  <i class="bi bi-three-dots dot__btn">
+                    <!-- dropdwon menu shows -->
+                    <div class="dropdown__menu">
+                      <div class="drop__item">
+                        <i class="bi bi-play-fill"></i>
+                        <a href="#music-bar">Play Now</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus-lg"></i>
+                        <a href="#latest-release">Add to Queue</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus"></i>
+                        <a href="#latest-release">Add to Favourites</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <a href="#latest-release">Get Info</a>
+                      </div> 
+                    </div>
+                  </i>
+                </div>
+                <div class="time">4:45</div>
+              </div>
+            </div>
+            <!-- release card-4 -->
+            <div class="card">
+
+              <div class="card__left">
+                <div class="card__image">
+                  <img src="/assets/image/latest-release/latest-release-1.jpg" alt="">
+                  <a href="#player__control" >
+                    <i class="bi bi-play-fill"></i>
+                  </a>
+                </div>
+                <div class="card__name">
+                  <div class="card__name--title">onism</div>
+                  <div class="card__name--date">July 2022</div>
+                </div>
+              </div>
+
+              <div class="card__right">
+                 <!-- hover dropdown effect -->
+                 <div id="dropdown">
+                  <i class="bi bi-three-dots dot__btn">
+                    <!-- dropdwon menu shows -->
+                    <div class="dropdown__menu">
+                      <div class="drop__item">
+                        <i class="bi bi-play-fill"></i>
+                        <a href="#music-bar">Play Now</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus-lg"></i>
+                        <a href="#latest-release">Add to Queue</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-plus"></i>
+                        <a href="#latest-release">Add to Favourites</a>
+                      </div>
+                      <hr/>
+                
+                      <div class="drop__item">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <a href="#latest-release">Get Info</a>
+                      </div> 
+                    </div>
+                  </i>
+                </div>
+                <div class="time">4:45</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artist part of left section -->
+        <div class="section__left--artist">
+          <div class="title">Popular Artist</div>
+          <div class="popular--artist">
+             
+            <div class="artist">
+              <div class="artist__image">
+                <img src="/assets/image/artist/artist-2.jpg" alt="">
+                <a href="/single-artist-playlist.html">
+                  <i class="bi bi-play-fill"></i>
+                </a>
+              </div>
+              <p class="artist__name">Ritviz</p>
+            </div>
+
+            <div class="artist">
+              <div class="artist__image">
+                <img src="/assets/image/artist/artist-5.jpg" alt="">
+                <a href="/single-artist-playlist.html">
+                  <i class="bi bi-play-fill"></i>
+                </a>
+              </div>
+              <p class="artist__name">Taylor Swift</p>
+            </div>
+
+            <div class="artist">
+              <div class="artist__image">
+                <img src="/assets/image/artist/artist-1.jpg" alt="">
+                <a href="/single-artist-playlist.html">
+                  <i class="bi bi-play-fill"></i>
+                </a>
+              </div>
+              <p class="artist__name">Martix Garrix</p>
+            </div>
+
+            <div class="artist">
+              <div class="artist__image">
+                <img src="/assets/image/artist/artist-3.jpg" alt="">
+                <a href="/single-artist-playlist.html">
+                  <i class="bi bi-play-fill"></i>
+                </a>
+              </div>
+              <p class="artist__name">Tove Styrke</p>
+            </div>
+
+            <div class="artist">
+              <div class="artist__image">
+                <img src="/assets/image/artist/artist-4.jpg" alt="">
+                <a href="/single-artist-playlist.html">
+                  <i class="bi bi-play-fill"></i>
+                </a>
+              </div>
+              <p class="artist__name">Prateek Kuhad</p>
+            </div>
+
+            <div class="artist">
+              <div class="artist__image">
+                <img src="/assets/image/artist/artist-8.jpg" alt="">
+                <a href="/single-artist-playlist.html">
+                  <i class="bi bi-play-fill"></i>
+                </a>
+              </div>
+              <p class="artist__name">Lorem</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Genre part of left section -->
+        <div class="section__left--genre">
+
+          <div class="genre">
+            <div class="genre__image">
+              <img src="/assets/image/genre/genre-1.jpg" alt="">  
+            </div>
+            <p class="genre__name">Station</p>
+          </div>
+
+          <div class="genre">
+            <div class="genre__image">
+              <img src="/assets/image/genre/genre-2.jpg" alt="">  
+            </div>
+            <p>Love</p>  
+          </div>
+
+          <div class="genre">
+            <div class="genre__image">
+              <img src="/assets/image/genre/genre-6.jpg" alt="">  
+            </div>
+            <p>Workout</p>  
+          </div>
+
+          <div class="genre">
+            <div class="genre__image">
+              <img src="/assets/image/genre/genre-3.jpg" alt="">  
+            </div>
+            <p>Rock</p>  
+          </div>
+
+          <div class="genre">
+            <div class="genre__image">
+              <img src="/assets/image/genre/genre-5.jpg" alt="">  
+            </div>
+            <p>Pop</p>  
+          </div>
+
+          <div class="genre">
+            <div class="genre__image">
+              <img src="/assets/image/genre/genre-9.jpg" alt="">  
+            </div>
+            <p>Calm</p>  
+          </div>
+        </div>
+
+        <!-- playlist part of left section -->
+        <div class="section__left--playlist">
+
+          <div class="playlist">
+            <div class="playlist__image">
+              <img src="/assets/image/playlist/playlist-2.jpg" alt="">
+            </div>
+            <p class="playlist__name">Retro</p>
+          </div>
+         
+          <div class="playlist">
+            <div class="playlist__image">
+              <img src="/assets/image/playlist/playlist-6.jpg" alt="">
+            </div>
+            <p class="playlist__name">EDM</p>
+          </div>
+
+          <div class="playlist">
+            <div class="playlist__image">
+              <img src="/assets/image/playlist/playlist-5.jpg" alt="">
+            </div>
+            <p class="playlist__name">Workout</p>
+          </div>
+
+        </div>
+
+        <!-- englist playlist part -->
+        <div class="section__left--english">
+          <div class="title">Latest English</div>
+          <div class="album__container">
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-english/new-english-1.png" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-english/new-english-1.png" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Music</p>
+              <p class="album--date">Oct 15, 2021</p>
+            </div>
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-english/new-english-2.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-english/new-english-3.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-english/new-english-4.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-english/new-english-5.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div> 
+          </div>
+
+        </div>
+
+        <!-- hindi playlist part -->
+        <div class="section__left--hindi">
+          <div class="title">Latest Hindi</div>
+          <div class="album__container">
+
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-hindi/new-hindi-1.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-hindi/new-hindi-2.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Music</p>
+              <p class="album--date">Oct 15, 2021</p>
+            </div>
+
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-hindi/new-hindi-1.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-hindi/new-hindi-4.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-hindi/new-hindi-2.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div>
+
+            <div class="album">
+              <div class="album__image">
+                <img src="/assets/image/latest-hindi/new-hindi-5.jpg" alt="">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <p class="album--name">Anyone</p>
+              <p class="album--date">Nov 21, 2022</p>
+            </div> 
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- !! Right section of ui start from here -->
+      <div class="section__right">
+        <!-- Queue bar  -->
+        <div class="queue__bar">
+          <div class="queue">Queue</div>
+          <!-- dropdown btn show list on hover -->
+          <div class="drop--icon">
+            <div class="dropdown">
+              <button class="dropdown__btn">
+                <span>Queue</span>
+                <i class="bi bi-caret-down"></i>
+              </button>
+              <div class="dropdown__list">
+                <p class="list-1">Playlist</p>
+                <p class="list-2">Favourite</p>
+                <p class="list-3">Listen</p>
+              </div>
+            </div> 
+          </div>
+
+        </div>
+
+        
+
+        <!-- songs list -->
+        <div class="song__list">
+          <ol type="1">
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-2.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-1.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-4.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-5.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-1.png" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-2.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-3.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-4.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-5.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-5.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-4.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-1.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-3.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-4.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-3.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-4.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-5.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-5.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-4.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-1.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-english/new-english-3.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="song">
+                <div class="song__details">
+                  <!-- <p class="serial__id">01</p> -->
+                  <div class="img__container">
+                    <img src="/assets/image/latest-hindi/new-hindi-4.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <p class="song__name">Mirage</p>
+                    <p class="singer">Elsse</p>
+                  </div>
+                </div>
+                <div class="heart__shape">
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+        </div>
+      </div>
+          
+    </div>
+  </div>
+
+  
+  <!-- !! footer for music play controller-->
+  <footer id="control__panel">
+    <div class="music__bar--container">
+      <!-- current played song-->
+      <div class="song__play">
+        <div class="song__image">
+          <img src="/assets/image/artist/artist-3.jpg" alt="">
+        </div>
+        <div class="song__name">
+          <p>wake me up (feat. Finder)</p>
+          <p>Alan Martine</p>
+        </div>
+        <div class="add__btn">
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-x-circle"></i>
+        </div>
+
+      </div>
+
+      <!-- btn controls -->
+      <div class="play__btn">
+        <div class="btn">
+          <i class="bi bi-shuffle"></i>
+          <i class="bi bi-rewind"></i>
+          <i class="bi bi-pause-circle"></i>
+          <i class="bi bi-fast-forward"></i>
+          <i class="bi bi-arrow-counterclockwise"></i>
+        </div>
+        <div class="time__span">
+          <div class="start">3:20</div>
+          <div class="progress">
+            <i class="bi bi-circle-fill"></i>
+          </div>
+          <div class="end">6:49</div>
+        </div>
+      </div>
+
+      <!-- volume controls -->
+      <div class="volume">
+        <i class="bi bi-list"></i>
+        <i class="bi bi-volume-up"></i>
+        <div class="progress">
+          <i class="bi bi-circle-fill"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+ 
+   
+</body>
+</html>

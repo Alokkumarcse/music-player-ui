@@ -1,0 +1,328 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+/**
+* ! creating variable
+*/
+:root{
+    --h1: 40px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+
+    --color-white-100: rgba(255,255,255,1);
+    --color-white-75: rgba(255,255,255,0.75);
+    --color-white-50: rgba(255, 255,255,0.50);
+}
+
+/**
+* ! removing default styles
+*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,body{
+  background-color: rgba(32, 30, 30, 0.979);
+  height: 99%;
+  overflow: hidden;
+}
+
+
+/**
+* ! styles for navbar
+*/
+.navbar{
+  height: 10vh;
+  /* border: 2px solid rgb(68, 38, 38); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(32, 30, 30, 0.979);
+}
+
+.navbar__left{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+  color: var(--color-white-75)
+}
+
+.navbar__left--logo{
+  display: flex;
+  flex-direction: row;
+  gap:3px;
+}
+
+.navbar__left--logo img{
+  height: 8vh;
+  border-radius: 50%;
+}
+
+.navbar__left--text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-white-75);
+}
+
+.logo--text-2{
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+
+.navbar__right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap:20px;
+  padding: 10px;;
+}
+
+.navbar__right--search{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid gray; */
+  padding: 5px;
+  gap:5px;
+  border-radius: 10px;
+  background-color: rgba(32, 30, 30, 0.979);
+}
+
+.navbar__right--search {
+  color: var(--color-white-75);
+}
+
+.navbar__right--bell i{
+  color:var(--color-white-75)
+}
+
+.navbar__right--profile i{
+color:var(--color-white-75);
+font-size: 7vh;
+}
+
+.navbar__right--search input{
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgba(32, 30, 30, 0.979);
+}
+
+
+/**
+* ! style rules for section 
+*/
+.container{
+  margin-left: 55px;
+  color:var(--color-white-75);
+  /* border: 2px solid red; */
+  height: 100vh;
+}
+
+.section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 15px;
+  padding-top: 20px;
+}
+
+/* !! hide scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+* ! style for section left of ui
+*/
+.left__section{
+  /* border: 2px solid green; */
+  height: 100vh;
+  padding-bottom: 60px;
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+}
+
+/* About artist */
+.about__artist{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  padding:30px 0px;
+  background-image: linear-gradient(45deg, rgb(31, 31, 44) 5%, rgb(53, 53, 128));
+}
+
+/* artist details */
+.artist__details{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+/* artist image */
+.artist__image img{
+  position: relative;
+  height: 210px;
+  width: 210px;
+}
+
+/* name and followers */
+.name__follower{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.name__follower #name{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* about text */
+.about{
+  padding-right: 50px;
+  text-align: justify;
+}
+
+/* playAll buttton */
+.play__btn{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.play__btn button{
+  padding:10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+/* Track list */
+.song__list{
+  height: 100vh;
+  width: 100%;
+  overflow-y:scroll;
+  padding-bottom: 50px;
+}
+
+.song{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(49, 47, 47);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.song__details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+.img__container img{
+  height: 40px;
+}
+
+.name .singer{
+  font-size: 12px;
+}
+
+.heart__shape{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding-right: 10px;
+  font-size: 20px;
+  color:aqua;
+  font-weight: bolder;
+}
+
+
+/**
+* ! style rules for right section of ui
+*/
+
+.right__section{
+  /* border:2px solid rgb(165, 40, 40); */
+  box-sizing: border-box;
+  height: 100vh;
+  width:100%;
+}
+
+/* header */
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+/* bold font */
+.bold__font{
+  font-size: 25px;
+}
+
+
+
+/* Track list */
+.track__list{
+  height: 50vh;
+  width: 100%;
+  overflow-y:scroll;
+  padding-bottom: 50px;
+}
+
+/* similar artist track list */
+.similar__artist{
+  margin-bottom: 20px;
+  
+ 
+}
+.scroll{
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 5px;
+}
+
+.card__left{
+  display: flex;
+  gap:10px;
+}
+
+.card__left img{
+  height: 60px;
+  width: 60px;
+}
+
+.card__right{
+  margin-right: 10px;
+}
+
+/* Recently played */
+.recently__played{
+  max-height: 50vh;
+}
+
